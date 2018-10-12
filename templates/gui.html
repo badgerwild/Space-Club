@@ -9,13 +9,9 @@
 <header>
 <h1>These buttons control the Arduino LED</h1>
 </header>
-<div class='form-row'>
-  <button> Flash fast</button>
-</div>
-
-<div class='form-row'>
-  <button>Flash slow</button>
-</div>
-
+<form action ="/gui" method= "POST">
+    <input type="submit" name="submit" value="Blink Fast">
+    <input type="submit" name="submit" value="Blink Slow">
+</form>
 </body>
 </html>
