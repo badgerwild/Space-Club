@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Buttons to control LED</title>
-    <link rel="stylesheet" type= "text/css" href="{{url_for('static',filename='style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
 </head>
 <body>
+<div class ="header-container">
 <header>
 <h1>These buttons control the Arduino LED</h1>
 </header>
-<form action ="/gui" method= "POST">
+</div>
+
+<form action ="/" method= "POST">
     <input type="submit" name="submit" value="Blink Fast">
     <input type="submit" name="submit" value="Blink Slow">
     <input type="submit" name="submit" value="Turn Off">

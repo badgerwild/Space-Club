@@ -6,9 +6,9 @@ app = Flask(__name__)
 
 arduino_serial = serial.Serial('COM4', 9600, timeout=1)  # Create Serial port object called arduinoSerialData
 
-@app.route('/')
 
-@app.route('/gui', methods=(['GET', 'POST']))
+
+@app.route('/', methods=(['GET', 'POST']))
 
 def Blink_light():
 
