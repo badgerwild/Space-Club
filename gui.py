@@ -4,7 +4,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-arduino_serial = serial.Serial('COM4', 9600, timeout=1)  # Create Serial port object called arduinoSerialData
+arduino_serial = serial.Serial('COM3', 9600, timeout=1)  # Create Serial port object called arduinoSerialData
 
 
 
