@@ -16,4 +16,5 @@ else
   echo "branch name is not named properly, please see wiki for formating"
   exit 1
 fi
+#try  to make this work...
 }
