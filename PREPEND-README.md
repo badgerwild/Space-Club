@@ -15,11 +15,11 @@ once there open prepare-commit-msg in your editor. Paste all the script from the
 
 Procedure is pretty much the same. get in to the hooks folder
 
-$cd robotics-prototype/.git/hooks 
+$cd robotics-prototype/.git/hooks
 
 and open the the prepare-commit-message.sample file in an editor. Replace the sample code with the code in the repo. Save and remove the .sample at the end.
 
-now to work this needs to be made executable. 
+now to work this needs to be made executable.
 
 chmod +x prepare-commit-message
 
@@ -37,25 +37,25 @@ In your space concordia directory find the git folder and open hooks contained t
 
 once there open prepare-commit-msg.sample in your editor. Replace the code here with the code found in commit-message-hook.sh. Save the file by keeping the name the same and removing the .sample suffix.  that's it, the hook is up and running.
 
-Linux: 
+Linux:
 
 Open the .git/hooks folder. Should be in this directory:
 
-'''
+```
 robotics-protoype/.git/hooks
-'''
+```
 once there copy we need to make a copy of the prepare-commit-msg.sample. Use the run the rollowing commands:
-'''
+```
 $touch prepare-commit-msg.sample
-'''
+```
 copy contents of the sample to our new file:
-'''
+```
 $cp cp prepare-commit-msg.sample prepare-commit-msg
-'''
-make the new file executable: 
-'''
+```
+make the new file executable:
+```
 chmod +x prepare-commit-msg
-'''
+```
 
 Now open this file with your editor of choice and replace the code with that in commit-message-hook.sh. Save the file. The hook should now be set up.sue number> .
 
