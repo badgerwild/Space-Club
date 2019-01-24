@@ -1,6 +1,9 @@
 #!/bin/bash
-
-addBranchName(){
+#If there is already a commit message is disabled 
+if [[ "$2" = "commit" ]]; then
+    #statements
+    exit 0
+fi
 # Include any branches for which you wish to disable this script
   BRANCHES_TO_SKIP=(master develop staging test)
 
@@ -25,4 +28,3 @@ fi
     echo "Branch name is not named properly, please see wiki for formating: https://github.com/space-concordia-robotics/robotics-prototype/wiki/Work-Flow"
     exit 1
 fi
-}
